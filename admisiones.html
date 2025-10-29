@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisiones - Colegio Técnico</title>
+    <link rel="icon" href="CTyCEVV.ico">
+    <!-- Bootstrap CSS, Google Fonts, Custom CSS, Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="bg-primary text-white text-center p-2">
+        <div class="container">
+            <p class="mb-0"><i class="fas fa-phone-alt me-2"></i>Teléfono: (0541)-42133/41029 | <i class="fas fa-envelope me-2"></i>Email: coltecnicocevv@gmail.com</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html" style="text-decoration: none;">
+                <img src="logo sin fondo.png"
+                    alt="logo CT y CEVV"
+                    height="50"
+                    class="d-inline-block align-top me-2">
+                    <span>Colegio Técnico y CEVV</span>
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="especialidadesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                            <li><a class="dropdown-item" href="informatica.html"><i class="fas fa-laptop-code me-2"></i>Bachillerato Técnico en Informática</a></li>
+                            <li><a class="dropdown-item" href="salud.html"><i class="fas fa-heartbeat me-2"></i>Bachillerato Técnico en Salud</a></li>
+                            <li><a class="dropdown-item" href="electromecanica.html"><i class="fas fa-cogs me-2"></i>Bachillerato Técnico en Electromecánica</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="admisiones.html">Admisiones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Proceso de Admisión</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+            <!-- Left Column: Process and Requirements -->
+            <div class="col-lg-7">
+                <!-- Requisitos -->
+                <section id="requisitos" class="mb-5">
+                    <h2 class="mb-3">Requisitos de Admisión</h2>
+                    <p>Para ser considerado como candidato, el aspirante debe presentar la siguiente documentación:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><i class="fas fa-check text-primary me-2"></i>Certificado de nacimiento original.</li>
+                        <li class="list-group-item"><i class="fas fa-check text-primary me-2"></i>Certificado de estudios del último año cursado.</li>
+                        <li class="list-group-item"><i class="fas fa-check text-primary me-2"></i>4 fotografías tamaño carnet.</li>
+                        <li class="list-group-item"><i class="fas fa-check text-primary me-2"></i>Copia del documento de identidad del padre/madre o tutor.</li>
+                        <li class="list-group-item"><i class="fas fa-check text-primary me-2"></i>Completar el formulario de preinscripción en línea.</li>
+                    </ul>
+                </section>
+
+                <!-- Proceso -->
+                <section id="proceso" class="mb-5">
+                    <h2 class="mb-3">Nuestro Proceso Paso a Paso</h2>
+                    <div class="accordion" id="procesoAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    <strong>Paso 1:</strong> Preinscripción en Línea
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#procesoAccordion">
+                                <div class="accordion-body">
+                                    Complete el formulario de preinscripción disponible en esta página con los datos del aspirante y del tutor.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    <strong>Paso 2:</strong> Entrega de Documentos
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#procesoAccordion">
+                                <div class="accordion-body">
+                                    Acérquese a la secretaría del colegio con la documentación completa detallada en los requisitos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    <strong>Paso 3:</strong> Entrevista y Evaluación
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#procesoAccordion">
+                                <div class="accordion-body">
+                                    Se coordinará una fecha para una entrevista con el aspirante y su tutor, junto con una evaluación diagnóstica.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    <strong>Paso 4:</strong> Publicación de Resultados
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#procesoAccordion">
+                                <div class="accordion-body">
+                                    Los resultados del proceso de admisión serán publicados en nuestro sitio web y en la cartelera del colegio en las fechas establecidas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="col-lg-5">
+                <div class="card bg-light shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Formulario de Preinscripción</h3>
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="nombre-aspirante" class="form-label">Nombre Completo del Aspirante</label>
+                                <input type="text" class="form-control" id="nombre-aspirante" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email-tutor" class="form-label">Email del Padre/Tutor</label>
+                                <input type="email" class="form-control" id="email-tutor" required>
+                            </div>
+                             <div class="mb-3">
+                                <label for="telefono-tutor" class="form-label">Teléfono de Contacto</label>
+                                <input type="tel" class="form-control" id="telefono-tutor" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="especialidad" class="form-label">Especialidad de Interés</label>
+                                <select class="form-select" id="especialidad" required>
+                                    <option selected disabled value="">Seleccione una opción...</option>
+                                    <option value="informatica">Bachillerato Técnico en Informática</option>
+                                    <option value="salud">Bachillerato Técnico en Salud</option>
+                                    <option value="electromecanica">Bachillerato Técnico en Electromecánica</option>
+                                </select>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar Preinscripción</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Colegio Técnico y Centro de Entrenamiento Vocacional de Villarrica</h5>
+                    <p>Comprometidos con la excelencia académica y la formación integral de nuestros estudiantes desde 1987.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Dirección: Pte. Hayes c/ Blvd. Bicentenario, Villarrica</li>
+                        <li><i class="fas fa-phone me-2"></i>Teléfono: (0541)-42133/41029</li>
+                        <li><i class="fas fa-envelope me-2"></i>Email: coltecnicocevv@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ctycevv/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/centro.de.estudiantesctycevv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center border-top pt-3 mt-3">
+                <p>&copy; 2025 Colegio Técnico y Centro de Entrenamiento Vocacional de Villarrica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <!-- Botón flotante del chatbot -->
+    <div class="chatbot-button" id="chatbotToggle">❔</div>
+    <!-- Ventana del chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+    <div class="chatbot-header">
+        <h3>SOPORTEC</h3>
+        <button id="chatbotClose" class="chatbot-close-btn">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+        <div class="message bot-message">
+        ¡Hola!👋 Soy el asistente virtual del Colegio Técnico. ¿En qué puedo ayudarte hoy?
+        </div>
+    </div>
+    <div class="chatbot-input">
+        <input type="text" id="userInput" placeholder="Escribe tu pregunta aquí..." autocomplete="off" />
+        <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+    </div>
+    </div>
+
+    <!-- Configuración para el módulo Emscripten -->
+    <script>
+    let wasmReady = false;
+    let responderFn = null;
+    var Module = {
+        onRuntimeInitialized: function () {
+        responderFn = Module.cwrap('responder', 'string', ['string']);
+        wasmReady = true;
+        console.log("WebAssembly listo");
+        }
+    };
+    </script>
+
+    <script src="chatbot.js"></script>
+
+</body>
+</html> 

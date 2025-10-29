@@ -1,0 +1,439 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-dark) !important;
+    font-size: 0.9rem;
+}
+
+/* Paleta de Colores Institucional */
+:root {
+    --primary-color: #14529C; /* Azul principal */
+    --primary-light: #3A75C0; /* Azul claro */
+    --primary-dark: #0D3A6B; /* Azul oscuro */
+    --secondary-color: #4A8FD9; /* Azul secundario */
+    --light-color: #F5F7FA; /* Fondo claro */
+    --neutral-color: #E8EDF5; /* Color neutro */
+    --accent-color: #FFA726; /* Color de acento - naranja suave */
+    --dark-color: #2C3E50; /* Texto oscuro */
+    --gray-color: #7F8C8D; /* Texto gris */
+}
+
+/* Override Bootstrap Primary Color */
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-warning {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: white !important;
+}
+
+.btn-warning:hover {
+    background-color: #FF9800 !important;
+    border-color: #FF9800 !important;
+}
+
+/* --- Secciones Personalizadas --- */
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar-brand:hover{
+    background-color: rgba(13,58,107,0.05);
+    transform: translateY(-1px);
+}
+
+.nav-link {
+    color: var(--dark-color) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+    background-color: var(--neutral-color);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--neutral-color);
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(20, 82, 156, 0.85), rgba(13, 58, 107, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    min-height: 400px;
+}
+
+.hero-section h1 {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-section p {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Cards de Especialidades */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.card i {
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+}
+
+.card:hover i {
+    transform: scale(1.15);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+}
+
+.card-text {
+    color: var(--gray-color);
+}
+
+/* Call to Action Section */
+.bg-light {
+    background-color: var(--neutral-color) !important;
+}
+
+.cta-section h2 {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: var(--gray-color);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, var(--primary-dark), var(--primary-color)) !important;
+}
+
+footer h5 {
+    color: white;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+footer p, footer li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgba(255,255,255, 0.95) !important;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255,255,255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Admisiones Page */
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Secciones internas */
+.page-header {
+    background: linear-gradient(rgba(20, 82, 156, 0.85), rgba(13, 58, 107, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+    background-size: cover;
+    height: 30vh;
+    min-height: 250px;
+}
+
+/* Chatbot */
+.chatbot-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background:#2980b9;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.4);
+    transition: transform 0.3s;
+    z-index: 1101;
+    font-size: 24px;
+}
+.chatbot-button:hover { 
+    background: #2471a3; 
+    transform: scale(1.05); 
+}
+
+.chatbot-button.active { 
+    background: #fd975c; 
+    transform: rotate(45deg); 
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    width: 360px;
+    height: 480px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1100;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--neutral-color);
+}
+.chatbot-container.active { 
+    display: flex; 
+}
+
+.chatbot-header {
+    background:#2980b9;
+    color: white;
+    padding: 15px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chatbot-header h3 { 
+    margin: 0; 
+    font-size: 1.3rem; 
+    font-weight: 600;
+}
+
+.chatbot-close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    transform: scale(1.1);
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--light-color);
+}
+
+.message {
+    max-width: 80%;
+    padding: 12px 18px;
+    border-radius: 18px;
+    line-height: 1.4;
+    animation: fadeIn 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px);} 
+    to { opacity: 1; transform: translateY(0);} 
+}
+
+.user-message { 
+    background:#2980b9; 
+    color: white; 
+    align-self: flex-end; 
+    border-bottom-right-radius: 5px; 
+}
+
+.bot-message { 
+    background: white; 
+    color: var(--dark-color); 
+    align-self: flex-start; 
+    border-bottom-left-radius: 5px;
+    border: 1px solid var(--neutral-color); 
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid var(--neutral-color);
+    background: white;
+}
+.chatbot-input input {
+    flex: 1;
+    padding: 12px 18px;
+    border: 1px solid var(--neutral-color);
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+.chatbot-input input:focus { 
+    border-color: #2980b9; 
+}
+
+.chatbot-input button {
+    background:#2980b9;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+.chatbot-input button:hover { 
+    background:#2471a3; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+        min-height: 400px;
+        padding: 2rem 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+    
+    .chatbot-container {
+        width: 90%;
+        right: 5%;
+        height: 70vh;
+        bottom:80px;
+    }
+    
+    .card-body {
+        padding: 1.5rem 1rem;
+    }
+
+    .navbar{
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 50vh;
+        min-height: 350px;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .chatbot-container{
+        width: 98%;
+        right: 1%;
+        height: 80vh;
+        bottom: 70px;
+    }
+}
